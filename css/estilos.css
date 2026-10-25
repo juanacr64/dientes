@@ -1,0 +1,106 @@
+/* 2. Definir las letras en función de vw */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 3vw;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 30px;
+}
+
+/* 3. Espacios en vh para el header */
+header {
+    padding: 1vh 1vw;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* 4. Espacios en vh para el footer */
+footer {
+    padding-top: 1vh;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#contenedor-principal {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.seccion-contenido {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fafbfc;
+    border-radius: 6px;
+}
+
+/* Estilos de las imágenes con porcentajes requeridos */
+.adaptativa-porcentaje-1 {
+    width: 70%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-top: 8px;
+}
+
+.adaptativa-porcentaje-2 {
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-top: 8px;
+}
+
+.adaptativa-porcentaje-3 {
+    width: 20%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-top: 8px;
+}
+
+/* Ocultar el div #resumen por defecto */
+#resumen {
+    display: none;
+}
+
+.columna {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    margin: 2% 2% 0 0;
+    background-color: #eef2f5;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+/* Media Query para más de 600px de ancho */
+@media (min-width: 600px) {
+    #resumen {
+        display: block;
+        font-size: 16px;
+        color: red;
+    }
+}
+
+/* Media Query para más de 900px de ancho */
+@media (min-width: 900px) {
+    #resumen {
+        font-size: 14px;
+        color: black;
+    }
+}
